@@ -1,5 +1,10 @@
 #include <stdio.h>
 
+void print_var(int a, int b)
+{
+	printf("test gdb1 i:%d sum:%d\n", a, b);
+}
+
 main()
 {
 	int i=0;
@@ -7,6 +12,6 @@ main()
 	for(i=0; i<10; i++)
 	{
 		sum += i;
-		printf("test gdb1 i:%d sum:%d\n", i, sum);
+		print_var(i, sum);
 	}
 }
